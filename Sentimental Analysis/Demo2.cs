@@ -10,15 +10,11 @@ namespace SentimentAnalysis.HelperClass
 {
     internal class Demo2
     {
-        private MLContext _context;
 
-        public Demo2(MLContext context)
+        public static void Run()
         {
-            _context = context;
-        }
+            MLContext _context = new MLContext();
 
-        public void Run()
-        {
             // Define a larger training dataset
             var trainingData = new[]
             {
